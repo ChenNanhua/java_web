@@ -31,8 +31,8 @@ public class Record extends HttpServlet {
             ArrayList<ArrayList<String>> order_result = new ArrayList<>();
             if (db.getRows() >= 1) {
                 do {
-                    String record_user_id = results.getString("user_id");
-                    db.select("select * from user where user_id = " + record_user_id + ";");
+                    db.select("select * from user where user_id = " + results.getInt("user_id") + ";");
+                    System.out.println("select * from user where user_id = " + results.getInt("user_id") + ";");
                     ArrayList<String> order_item = new ArrayList<>(5);   //保存订单的子项
                     order_item.add(db.results.getString("user_id"));
                     order_item.add(db.results.getString("name"));

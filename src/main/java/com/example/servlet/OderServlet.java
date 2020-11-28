@@ -38,6 +38,8 @@ public class OderServlet extends HttpServlet {
                         sql = "insert into order_list(user_id,phone_id,num) values (" +
                                 user_id + "," + results.getInt("phone_id") + "," + results.getInt("num") + ");";
                         db.execute(sql);
+                        sql = "update phone set stock=stock-" + results.getInt("num") + " where phone_id=" + results.getInt("phone_id") + ";";
+                        db.execute(sql);
                     } while (results.next());
                     //发送订单信息到客户邮箱
                     String info = get_info();
