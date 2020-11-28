@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+div {
+    text-align: center;
+}
+
+div table {
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.top {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 97%;
+}
+
+.btn-numbox li {
+    float: left;
+}
+
+.top li {
+    float: right;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/*鼠标移动到水平导航栏的选项上修改背景颜色 */
+li a:hover {
+    background-color: #45B549;
+}
+
+#sale {
+    margin: 0 auto;
+}
+
+/*表格的css*/
+table {
+    border-collapse: collapse;
+}
+
+table, table tr th, table tr td {
+    border: 1px solid #000000;
+}
+
+/*设置购买数量的CSS*/
+.btn-numbox .count .num-jian,
+.input-num,
+.num-jia {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+
+.btn-numbox .count .input-num {
+    width: 58px;
+    height: 26px;
+    color: #333;
+    border-left: 0;
+    border-right: 0;
+}
