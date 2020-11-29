@@ -3,4 +3,4 @@
 
 This project saves major java web homework
 
-use java1.8 tomacat8
+use java-1.8 tomacat-8 mysql-5.6
