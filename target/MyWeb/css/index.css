@@ -15,7 +15,7 @@ td {
     padding: 5px;
 }
 
-ul {
+li {
     list-style-type: none;
 }
 
@@ -25,10 +25,6 @@ ul {
     position: fixed;
     top: 0;
     width: 97%;
-}
-
-.btn-numbox li {
-    float: left;
 }
 
 .top li {
@@ -55,13 +51,30 @@ li a:hover {
 /*表格的css*/
 table {
     border-collapse: collapse;
+    table-layout: fixed;
+    word-break: break-all;
 }
 
 table, table tr th, table tr td {
     border: 1px solid #000000;
 }
 
-/*设置购买数量的CSS*/
+
+.btn-numbox li {
+    float: left;
+}
+
+/*phoneManage.jsp下的table设置*/
+.li_phone {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*index.jsp设置购买数量的CSS*/
 .btn-numbox .count .num-jian,
 .input-num,
 .num-jia {

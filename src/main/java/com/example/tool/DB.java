@@ -19,7 +19,7 @@ public class DB {
     protected int rows;
 
     public DB(String dbname, String table) {
-        String newUrl = url + dbname;
+        String newUrl = url + dbname + "?autoReconnect=true";
         this.table = table;
         try {
             //注册JDBC驱动
