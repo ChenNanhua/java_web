@@ -6,7 +6,7 @@ import java.sql.*;
 public class DB {
     protected final String url = "jdbc:mysql://localhost:3306/";
     private final String name = "root";
-    private final String password = "51130012Cyc";
+    private final String password = "123456";
 
     public Connection db;
     protected String table;
